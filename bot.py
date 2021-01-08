@@ -15,11 +15,13 @@ bot.
 
 import logging
 import os
+from os import environ
 
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 
-TOKEN = "1515402417:AAFyxj3pruXCOqF5zUsFgeyc15CBrGmXSWA"
-APP_NAME = "https://mary87-bot.herokuapp.com/"
+TOKEN = environ['TOKEN']
+APP_NAME = environ['APP_NAME']
+# "https://mary87-bot.herokuapp.com/"
 
 # Enable logging
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
