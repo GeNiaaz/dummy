@@ -28,7 +28,10 @@ logger = logging.getLogger(__name__)
 # context. Error handlers also receive the raised TelegramError object in error.
 def start(update, context):
     """Send a message when the command /start is issued."""
-    update.message.reply_text('Hi!')
+    update.message.reply_text('you wake up on a large grass patch, stark naked and disoriented. ')
+    update.message.reply_text('You gingerly stand up and look around  at the vast landscape. In the distance stands a giant ferris wheel and a pristine white carousel')
+    update.message.reply_text('The air is just... You can\'t put your finger on it but it just feels... still. You don\'t know why, but you seem to sense in your bones that you are utterly and completely alone.')
+    update.message.reply_text('Shaking off feelings of Castaway, you look around and see a large Oak table. Upon it seats 2 neatly folded pairs of clothes and a battered iPhone.')
 
 
 def help(update, context):
@@ -38,7 +41,7 @@ def help(update, context):
 
 def echo(update, context):
     """Echo the user message."""
-    update.message.reply_text(update.message.text)
+    update.message.reply_text("hell no")
 
 
 def error(update, context):
